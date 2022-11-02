@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat+Brush&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+.container {
+    text-align: center;
+}
+
+
+#teksti {
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+li {
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #DEE0DA;
+    border-radius: 5px; 
+}
+
+#lisää {
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Poppins', sans-serif;
+    background-color: #DEE0DA;
+    border-style: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    color: solid black;
+    cursor: pointer;
+}
+
+#lisää:hover {
+    background-color: pink;
+}
+
+.checkbox {
+   border: 5px solid black;
+   height: 25px;
+   width: 50px;
+   float: left;
+   margin-top: 10px;
+}
+
+.muokkaa, .poistaKaikki {
+    background-color: #DEE0DA;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.muokkaa:hover, .poistaKaikki:hover {
+    background-color: pink;
+}
+
+.poistaNappi {
+    float:right;
+}
+
+.tekstiKenttä, .nappulat {
+    text-align: center;
+}
+
