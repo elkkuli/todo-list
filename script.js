@@ -30,12 +30,6 @@ function lisääTeksti(){
     poista.className="poistaNappi"; 
     poista.addEventListener("click", poistaTehtävä);
     uusiTehtävä.appendChild(poista);
-
-    var poistaKaikki = document.getElementsByClassName("poistaKaikki")
-    poistaKaikki.addEventListener('click', function(){
-        tehtävät = [];
-        getList(tehtävät);
-    })
 }
 
 function tarkistaSisältö(x){
@@ -73,3 +67,16 @@ function poistaTehtävä(){
     poistettava.remove();
 }
 
+function poistaKaikki(){
+    var lista = document.getElementById("todo");
+    lista.remove();
+
+    var place = document.getElementById("tekstiKenttä");
+    let uusiUl = document.createElement("ul");
+        uusiUl.id = "todo";
+    place.appendChild(uusiUl);
+
+    localStorage.removeItem("tasks");
+
+    amountOfTasks();
+}
